@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#script to generate random numbers and their roots
+NUM1=$RANDOM
+NUM2=$RANDOM
+echo "The first random number is $NUM1"
+ROOT1=`echo "scale=0;sqrt($NUM1)"|bc`
+echo "The square root is $ROOT1"
+echo "The first random number is $NUM2"
+ROOT2=`echo "scale=0;sqrt($NUM2)"|bc`
+echo "The square root is $ROOT2"
+echo "The first random number is $NUM2"
+ROOT2=`echo "scale=0;sqrt($NUM2)"|bc`
+echo "The square root is $ROOT2"
